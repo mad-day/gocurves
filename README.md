@@ -1,7 +1,7 @@
 # gocurves
 Elliptic Curves for go's `crypto/elliptic` package.
 
-[![GoDoc](https://godoc.org/github.com/mad-day/gocurves?status.svg)](https://godoc.org/github.com/mad-day/gocurves)
+[![GoDoc](https://godocs.io/github.com/mad-day/gocurves?status.svg)](https://godoc.org/github.com/mad-day/gocurves)
 
 Additional Elliptic Curves for `crypto/elliptic`.
 Curves are implemented using `*elliptic.CurveParams`.
