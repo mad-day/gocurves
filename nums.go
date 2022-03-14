@@ -48,7 +48,31 @@ func Nums384() elliptic.Curve { return numsp384d1 }
 // Nums512() returns a Curve which implements nums512d1 of Microsoft's Nothing Up My Sleeve (NUMS)
 func Nums512() elliptic.Curve { return numsp512d1 }
 
+var numsp256t1 = &elliptic.CurveParams{
+	P: strbig("0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff43"),
+	N: strbig("0x3fffffffffffffffffffffffffffffffbe6aa55ad0a6bc64e5b84e6f1122b4ad"),
+	B: strbig("0x3bee"),
+	Gx: strbig("0x0d"),
+	Gy: strbig("0x7d0ab41e2a1276dba3d330b39fa046bfbe2a6d63824d303f707f6fb5331cadba"),
+	BitSize: 256,
+	Name: "numsp256t1",
+}
 
+var numsp512t1 = &elliptic.CurveParams{
+	P: strbig("0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc7"),
+	N: strbig("0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa7e50809efdabbb9a624784f449545f0dcea5ff0cb800f894e78d1cb0b5f0189"),
+	B: strbig("0x9baa8"),
+	Gx: strbig("0x20"),
+	Gy: strbig("0x7d67e841dc4c467b605091d80869212f9ceb124bf726973f9ff048779e1d614e62ae2ece5057b5dad96b7a897c1d72799261134638750f4f0cb91027543b1c5e"),
+	BitSize: 512,
+	Name: "numsp512t1",
+}
+
+// Nums256t1() returns a Curve which implements nums256t1 of Microsoft's Nothing Up My Sleeve (NUMS)
+func Nums256t1() elliptic.Curve { return numsp256t1 }
+
+// Nums512t1() returns a Curve which implements nums512t1 of Microsoft's Nothing Up My Sleeve (NUMS)
+func Nums512t1() elliptic.Curve { return numsp512t1 }
 
 var bp160t1 = &elliptic.CurveParams{
 	P: strbig("0xe95e4a5f737059dc60dfc7ad95b3d8139515620f"),
@@ -114,7 +138,6 @@ var bp512t1 = &elliptic.CurveParams{
 	Name: "brainpoolP512t1",
 }
 
-
 // Bp160() returns a Curve which implements brainpoolP160t1 of Brainpool Standard
 func Bp160() elliptic.Curve { return bp160t1 }
 
@@ -135,7 +158,3 @@ func Bp384() elliptic.Curve { return bp384t1 }
 
 // Bp512() returns a Curve which implements brainpoolP512t1 of Brainpool Standard
 func Bp512() elliptic.Curve { return bp512t1 }
-
-
-
-
